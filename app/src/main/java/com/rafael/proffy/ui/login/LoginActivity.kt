@@ -1,11 +1,14 @@
-package com.rafael.proffy
+package com.rafael.proffy.ui.login
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.rafael.proffy.R
 import com.rafael.proffy.databinding.ActivityLoginBinding
+import com.rafael.proffy.ui.forgot.ForgotActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -26,5 +29,28 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val buttonForgot = binding.buttonForgot
+
+        buttonForgot.setOnClickListener {
+            handleForgot()
+        }
+    }
+
+    private fun handleForgot() {
+        val intent = Intent(this, ForgotActivity::class.java)
+        startActivity(intent)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

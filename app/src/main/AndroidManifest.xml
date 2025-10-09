@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proffy">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.forgot.ForgotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
