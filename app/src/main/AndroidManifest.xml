@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proffy">
         <activity
+            android:name=".ui.register.RegisterStepTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.register.RegisterStepOneActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.forgot.ForgotActivity"
             android:exported="false" />
         <activity

@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.rafael.proffy.R
 import com.rafael.proffy.databinding.ActivityLoginBinding
 import com.rafael.proffy.ui.forgot.ForgotActivity
+import com.rafael.proffy.ui.register.RegisterStepOneActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -31,14 +32,24 @@ class LoginActivity : AppCompatActivity() {
         }
 
         val buttonForgot = binding.buttonForgot
+        val buttonRegister = binding.buttonSignup
 
         buttonForgot.setOnClickListener {
             handleForgot()
+        }
+
+        buttonRegister.setOnClickListener {
+            handleRegister()
         }
     }
 
     private fun handleForgot() {
         val intent = Intent(this, ForgotActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun handleRegister() {
+        val intent = Intent(this, RegisterStepOneActivity::class.java)
         startActivity(intent)
     }
 }
