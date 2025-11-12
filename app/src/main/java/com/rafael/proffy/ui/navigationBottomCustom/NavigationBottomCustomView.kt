@@ -22,7 +22,8 @@ class NavigationBottomCustomView @JvmOverloads constructor(
     var onItemSelectedListener: ((Int) -> Unit)? = null
 
     init {
-
+        setupListeners()
+        updateSelection(R.id.container_teacher_list)
     }
 
     private fun setupListeners() {
