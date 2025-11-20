@@ -50,4 +50,11 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }
+
+
+
+
+
+
